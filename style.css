@@ -27,3 +27,8 @@
     /* Aplicar la animación */
     animation: slideDown 2s;
 }
+
+.hide {
+    opacity: 0;
+    transition: opacity 1s;
+}
