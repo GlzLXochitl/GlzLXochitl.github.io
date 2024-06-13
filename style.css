@@ -1,0 +1,29 @@
+@keyframes slideDown {
+    0% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e10;
+    z-index: 9999;
+}
+
+#intro img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    /* Aplicar la animación */
+    animation: slideDown 2s;
+}
