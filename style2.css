@@ -1,0 +1,300 @@
+/* INTRO */
+
+/* ANIMACIÓN DE LA INTRODUCCIÓN */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+ /* <!-- INTRO --> */
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e10;
+    z-index: 9999;
+}
+
+#intro img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    /* Aplicar la animación */
+    animation: slideDown 2s;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+/* STYLES BODY*/
+body {
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #18181a ;
+}
+
+/* STYLES NAV */
+/* NAV: LOGO */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.logotype-disposition {
+    width: 40px;
+    height: auto;
+}
+
+/* NAV: OPCIONS */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.6s ease;
+}
+
+nav.scrolled {
+    background-color: #262629 ;
+}
+
+.opcions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.opcions-container-disposition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; /* Agrega un espacio entre los elementos */
+}
+
+.opcions-design {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    color: #F2F3F4;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+ /* NAV: BTN */
+.btn-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 50%;
+    margin-right: 40px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+
+    
+} 
+
+.social-media-disposition {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 140px;
+}
+
+.contact-log-disposition {
+    width: 30px;
+    height: auto;
+
+}
+
+/* PRESENTATION */
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0; 
+
+}
+
+.half {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+  
+.black-bg {
+  background: #0e0e10 ;
+  left: 0;
+}
+  
+.image-bg {
+    background: url('/images/half-background.jpg');
+    background-size: cover;
+    right: 0;
+}
+
+.content-header-container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #F2F3F4;
+    position: relative;
+    
+}
+
+.content-header {
+    padding-top: 170px;
+    padding-left: 40px;
+}
+
+#develop {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#user {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 90px;
+    font-weight: 500;
+    margin-top: -45px;
+}
+
+#description {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+/* CADS */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #F2F3F4;
+    padding: 20px;
+    margin-top: 20px;
+    border: 0;
+    background-color: #18181a ;
+}
+
+#hability-style {
+    color: #F2F3F4;
+    background-color: #20224b
+}
+
+/*.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    color: #F2F3F4;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #20224b
+}*/
+
+/* CONTENEDOR DE TODO */
+.container-complitely {
+    background-color: #18181a ;
+    margin-top: -20px;
+}
+
+#about-me-title {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#about-me-habilities {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#about-me-description {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#habilities {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 100px;
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-habilisy-disposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #F2F3F4;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.card-title {
+    text-align: center;
+}
