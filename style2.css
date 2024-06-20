@@ -75,7 +75,7 @@ nav {
 }
 
 nav.scrolled {
-    background-color: #262629 ;
+    background-color: #212529 ;
 }
 
 .opcions-container {
@@ -135,7 +135,7 @@ nav.scrolled {
 }
 
 /* PRESENTATION */
-.jumbotron {
+#developer-jumbotron {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -275,7 +275,7 @@ nav.scrolled {
     margin-top: 100px;
 }
 
-.card-body {
+/*.card-body {
     justify-content: center;
     align-items: center;
     width: 300px;
@@ -297,4 +297,142 @@ nav.scrolled {
 
 .card-title {
     text-align: center;
+}*/
+
+.card-img-top {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-design {
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    background-color: #0e0e10;
+
+
+}
+
+#card-ability {
+    border: 3px solid #0e0e10; /* Grueso y color del borde */
+    border-radius: 10px; /* Redondeo de las esquinas */
+}
+
+#card-ability {
+    background-color: #0e0e10;
+    color: #ABB2B9;
+
+}
+
+
+.user-jombotron-disposition {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #F2F3F4;
+    padding: 20px;
+    margin-top: 20px;
+    border: 0;
+    background-color: #18181a ;
+}
+
+.jombotron-disposition-user-disposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #F2F3F4;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #18181a ;
+    margin-bottom: -20px;
+}
+
+.jombotron-disposition-user-text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 500;
+    color: #262629;
+}
+
+.jombotron-disposition-description-text {
+    /*color: #D0D3D4;*/
+    color: #464545;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cards-container-diposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #F2F3F4;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #18181a ;
+}
+
+.card-body-disposition {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.card-header-style {
+    font-weight: 600;
+}
+
+.abilitys-container {
+    margin-top: 100px;
+}
+
+.title-abilities {
+    color: #F2F3F4;
+    text-align: center;
+    
+}
+
+.social-media-disposition-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lead-container {
+    text-align: center;
+}
+
+.lead-user {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 600;
+    color: #18181a;
+}
+
+.lead-year {
+    font-size: 10px;
+    font-weight: 500;
+    color: #ABB2B9;
+    margin-top: 10px;
+}
+
+.opcions-design[href="Home"] {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #464545;
 }

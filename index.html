@@ -47,7 +47,7 @@
         <div class="">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0 opcions-container-disposition">
             <li class="nav-item active">
-              <a class="opcions-design" href="#">Home</a>
+              <a class="opcions-design" href="Home">Home</a>
             </li>
             <li class="nav-item">
               <a class="opcions-design" href="#">Link</a>
@@ -65,13 +65,15 @@
         <!-- NAV: BTN -->
       <div class="btn-container">
         <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Descargar CV (Documento)</button>
+          <a href="/assets/cv doc.pdf" download>
+            <button class="btn btn-outline-info my-2 my-sm-0" type="button">Descargar CV (Documento)</button>
+          </a>
         </form>
       </div>
     </div>
   </nav>
 
-  <div class="jumbotron">
+  <div class="jumbotron" id="developer-jumbotron">
     <div class="half black-bg"></div>
     <div class="half image-bg"></div>
     <div class="content-header-container">
@@ -84,12 +86,14 @@
           y me considero una persona comprometida y proactiva.
         </p>
         <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Descargar CV (Plantilla Visual)</button>
+          <a href="/assets/cv (es).pdf" download>
+            <button class="btn btn-outline-info my-2 my-sm-0" type="button">Descargar CV (Plantilla Visual)</button>
+          </a>
         </form>
         <div class="social-media-disposition">
-          <a href="#"><i class="fab fa-facebook-f"></i><img class="contact-log-disposition" src="/images/github.png"></a>
-          <a href="#"><i class="fab fa-twitter"></i><img class="contact-log-disposition" src="/images/gmail.png"></a>
-          <a href="#"><i class="fab fa-instagram"></i><img class="contact-log-disposition" src="/images/phone.png"></a>
+          <a href="https://github.com/GlzLXochitl" target="_blank"><img class="contact-log-disposition" src="/images/github.png"></a>
+          <a href="mailto:glzlxochitl@gmail.com"><img class="contact-log-disposition" src="/images/gmail.png"></a>
+          <a href="#"><img class="contact-log-disposition" src="/images/phone.png"></a>
         </div>
         
       </div> 
@@ -100,106 +104,111 @@
 
     <div class="container">
 
-      <div class="row">
-        <div class="col-md-8">
-          <div class="card h-100" id="about">
-            <div>
-              <h5 class="card-title-about" id="about-me-title">Sobre mí</h5>
-              <p class="card-text" id="about-me-description">
-                Una experiencia significativa que consolidó mi interés en el área de TI fue realizar prácticas en la Secretaría de Seguridad Pública Municipal de Aguascalientes, México (C4) durante la preparatoria. Adquirí conocimientos desde mantenimiento de equipos de cómputo hasta configuración de redes en servidores e instalación de equipo de seguridad. <br>
-                Durante mis estudios en la Universidad Tecnológica Metropolitana, participé en varias competencias, incluyendo el Hackathon Smart Security (INCyTEA 2023), y obtuvimos el tercer lugar en la vertiente de agroindustria en el Venado TECH 3.0 Hackathon 2023 con el proyecto Smart Biodigestor, un biodigestor con medición de parámetros. Entre otros proyectos que hemos realizado y presentado como equipo incluyen, una cerradura para control de accesos en estancias infantiles y un sistema automatizado para la producción de forraje para alimentación de ganado basado en nopal.</p>
-            </div>
+      <div class="jumbotron" id="user-jombotron">
+        <div class="user-jombotron-disposition">
+          <div class="jombotron-disposition-user-disposition">
+            <div class="jombotron-disposition-user-text">@GlzLXochitl</div>
           </div>
-        </div>
-      </div>
-
-      <div class="row" id="habilities">
-          <div class="col-md-8">
-            <div class="card h-100" id="about">
-              <div>
-                <h5 class="card-title-about" id="about-me-title">HABILIDADES</h5>
-              </div>
-            </div>
-          </div>
-
-        <div class="col-md-4 card-habilisy-disposition">
-          <div class="card h-100" id="hability-style">
-            <div class="card-body">
-              <h5 class="card-title">Habilidades</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 card-habilisy-disposition">
-          <div class="card h-100" id="hability-style">
-            <div class="card-body">
-              <h5 class="card-title">Habilidades</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 card-habilisy-disposition">
-          <div class="card h-100" id="hability-style">
-            <div class="card-body">
-              <h5 class="card-title">Habilidades</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 card-habilisy-disposition">
-          <div class="card h-100" id="hability-style">
-            <div class="card-body">
-              <h5 class="card-title">Habilidades</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="row" id="experience">
-      <div class="col-md-8">
-        <div class="card h-100" id="about">
           <div>
-            <h5 class="card-title-about" id="about-me-title">EXPERIENCIA</h5>
+            <div class="jombotron-disposition-description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate natus culpa mollitia sunt reiciendis eaque praesentium incidunt magnam, porro ratione, perferendis tempora voluptatibus nostrum omnis non debitis! Doloremque, saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 card-habilisy-disposition">
-        <div class="card h-100" id="hability-style">
-          <div class="card-body">
-            <h5 class="card-title">Experiencia</h5>
-            <p class="card-text"></p>
-          </div>
+    
+      <div class="abilitys-container">
+        <div class="title-abilities">
+          <p class="title-style" id="develop">ABILIDADES <strong>BLANDAS</strong></p>
         </div>
-      </div></div>
+        <div class="cards-container-diposition">
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="abilitys-container">
+        <div class="title-abilities">
+          <p class="title-style" id="develop">ABILIDADES <strong>TECNICAS</strong></p>
+        </div>
+        <div class="cards-container-diposition">
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-3 card-body-disposition">
+            <div class="card-header card-header-style">Dark card title</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
   </div>
 
+
+
   <footer class="footer bg-dark text-white mt-5 p-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Contactos</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-envelope"></i> Email: ejemplo@correo.com</li>
-            <li><i class="fas fa-phone"></i> Teléfono: +123 456 7890</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Información</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-user"></i> Nombre: América Xóchitl González Leos</li>
-            <li><i class="fas fa-calendar"></i> Última actualización: <span id="lastUpdated"></span></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Sígueme</h5>
-          <ul class="list-unstyled">
-            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="lead-container">
+      <p class="lead-user">@GlzLXochitl</p>
+    </div>
+    <div class="social-media-disposition-footer">
+      <a class="icon" href="#"><i class="fab fa-facebook-f"></i><img class="contact-log-disposition" src="/images/github.png"></a>
+      <a class="icon" href="#"><i class="fab fa-twitter"></i><img class="contact-log-disposition" src="/images/gmail.png"></a>
+      <a class="icon" href="#"><i class="fab fa-instagram"></i><img class="contact-log-disposition" src="/images/phone.png"></a>
+    </div>
+    <div class="lead-container">
+      <p class="lead-year">© 2021 GlzLXochitl</p>
     </div>
   </footer>
   
