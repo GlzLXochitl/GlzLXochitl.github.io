@@ -1,3 +1,6 @@
+/* INTRO 
+
+/* ANIMACIÓN DE LA INTRODUCCIÓN 
 @keyframes slideDown {
     0% {
         transform: translateY(-300%);
@@ -6,7 +9,7 @@
         transform: translateY(0);
     }
 }
-
+ /* INTRO 
 #intro {
     position: fixed;
     top: 0;
@@ -24,11 +27,99 @@
     width: 50px;
     height: 50px;
     opacity: 0.2;
-    /* Aplicar la animación */
+    /* Aplicar la animación 
     animation: slideDown 2s;
 }
 
 .hide {
     opacity: 0;
     transition: opacity 1s;
+}*/
+
+/* BODY */
+/* BODY: BACKGROUND */
+#inicio-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #0e0e10;
 }
+
+.half-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-image: url(./images/half-background.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+}
+
+/* BODY: HEADER */
+/* HEADER: LOGO */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.logotype-disposition {
+    width: 40px;
+    height: auto;
+}
+
+/* HEADER: OPCIONS */
+.opcions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.opcions-container-disposition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; /* Agrega un espacio entre los elementos */
+}
+
+.opcions-design {
+    /*font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;*/
+
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: 400px;
+
+    color: #f9f9f9;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+ /* HEADER: BTN */
+.btn-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 50%;
+    margin-right: 40px;
+}
+
+.download-btn {
+    background-color: #f9f9f9;
+    color: #0e0e10;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
