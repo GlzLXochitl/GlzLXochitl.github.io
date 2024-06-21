@@ -1,3 +1,9 @@
+/* MODAL */
+document.addEventListener('DOMContentLoaded', (event) => {
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+    myModal.show();
+});
+
 /* ANIMACION DE INTRO */
 setTimeout(function() {
     var intro = document.querySelector('#intro');

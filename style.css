@@ -1,3 +1,46 @@
+/* MODAL */
+#modal-content {
+    background-color: rgba(33, 37, 41, 0.6); /* Color de fondo semi-transparente orientado a #212529 */
+    backdrop-filter: blur(10px); /* Aplicar desenfoque al contenido detrás del modal */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    margin-top: 300px;
+}
+
+#modal-header, #modal-body{
+    background-color: transparent; /* Hacer que el fondo de estos elementos sea transparente */
+}
+
+#modal-header {
+    color: #E74C3C;
+}
+
+#modal-body {
+    color: #ABB2B9;
+}
+
+.warning {
+    height: 1.5em; /* Ajusta la altura de la imagen al tamaño del texto */
+    width: auto; /* Mantiene la proporción de la imagen */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+
+.modal-title-warning-disposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.btn-close {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F2F3F4;
+}
+
+
 /* INTRO */
 
 /* ANIMACIÓN DE LA INTRODUCCIÓN */
@@ -35,6 +78,7 @@
     opacity: 0;
     transition: opacity 0.6s ease-out;
 }
+
 
 /* STYLES BODY*/
 body {
