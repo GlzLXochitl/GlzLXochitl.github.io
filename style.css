@@ -417,10 +417,8 @@ nav.scrolled {
 
 .cards-container-diposition {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: auto;
-    height: 200px;
+    height: 350px;
     color: #F2F3F4;
     padding: 20px;
     margin-top: 20px;
@@ -483,3 +481,8 @@ nav.scrolled {
     text-decoration-thickness: 2px;
     text-decoration-color: #464545;
 }
+
+.card-text {
+    color: #c5c6c7;
+}
+
