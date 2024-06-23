@@ -28,8 +28,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
+
+  <!-- COPY ALERT -->
+  <div class="alert alert-success" role="alert" id="alertMessage" style="display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 9999;">
+    <i class="fas fa-check-circle"></i> Copiando en el portapapeles
+  </div>
+
   <!-- INTRO -->
   <div>
       <div class="modal" tabindex="-1" id="myModal">
@@ -113,10 +121,19 @@
           </a>
         </form>
         <div class="social-media-disposition">
-          <a href="https://github.com/GlzLXochitl" target="_blank"><img class="contact-log-disposition" src="/images/github.png"></a>
-          <a href="mailto:glzlxochitl@gmail.com"><img class="contact-log-disposition" src="/images/gmail.png"></a>
-          <a href="#"><img class="contact-log-disposition" src="/images/phone.png"></a>
+          <a href="https://github.com/GlzLXochitl" target="_blank">
+            <img class="contact-log-disposition" src="/images/github.png">
+          </a>
+          <a href="javascript:void(0);" id="sendEmailLink" onclick="copyToClipboardAndShowAlert('glzlxochitl@gmail.com')">
+            <img class="contact-log-disposition" src="/images/gmail.png">
+          </a>
+          <a href="javascript:void(0);" onclick="copyToClipboardAndShowAlert('(+52) 449 510 34 20')">
+            <img class="contact-log-disposition" src="/images/phone.png">
+          </a>
         </div>
+        <div id="alertMessage" class="alert">¡Texto copiado al portapapeles!</div>
+        
+        
         
       </div> 
     </div>
@@ -133,7 +150,9 @@
           </div>
           <div>
             <div class="jombotron-disposition-description-text">
-              Trabajamos con las nesecidades, buscamos una forma de solucionarlas y creamos la mejor ruta para llegar a la solución. El desarrollador de software como encargado de crear, diseñar y corregir todo tipo de software; aspiro a algun dia ser buen desarrollador.
+              Trabajamos con las necesidades, buscamos una forma de solucionarlas y creamos la mejor ruta 
+              para llegar a la solución. El desarrollador de software como encargado de crear, 
+              diseñar y corregir todo tipo de software; aspiro a algún día ser buen desarrollador.
             </div>
           </div>
         </div>
@@ -187,8 +206,8 @@
           <div class="card-header card-header-style">Educación escolarizada</div>
           <div class="card-body">
             <p class="card-text">
-              • <strong> Degree Multiplatform Software Engineering </strong> - Universidad Tecnológica Metropolitana de Aguascalientes (2022-Present).<br>
-              • <strong> Pasante Technical in Programming </strong> - Colegio de Estudios Cientificos y Tecnologicos del Estado de Aguascalientes (2019-2022).
+              • <strong> Desarrollo de Software Multiplataforma  </strong> - Universidad Tecnológica Metropolitana de Aguascalientes (2022-actualmente).<br>
+              • <strong> Pasante Técnico en programación </strong> - Colegio de Estudios Cientificos y Tecnologicos del Estado de Aguascalientes (2019-2022).
             </p>
           </div>
         </div>
@@ -259,7 +278,7 @@
 
               •	<strong>Hackathon Agro Inovacion</strong> (UNIVERSIDAD TECNOLÓGICA METROPOLITANA DE AGUASCALIENTES, 2024)<br>
               Proyecto presentado: Opuntech (VERTICAL DE AGROINDUSTRIA).<br>
-              Descripción: Sistema automatizado para la producción de forraje para la alimentación del ganado, a base de nopal.<br><br>
+              Descripción: Sistema automatizado para la producción de forraje de nopal destinado a la alimentación de ganado.<br><br>
               
             </p>
           </div>
@@ -281,6 +300,7 @@
             <p class="card-text">
               • <strong>Perfil personal </strong>(EN DESARROLLO).<br>
               Descripción: portafolio interactivo que muestra mis proyectos, mis habilidades y mis logros. Los visitantes pueden explorar cada proyecto y descargar mi currículum vitae en formato PDF, facilitando el acceso a mi información profesional de manera organizada y atractiva.<br>
+              Tecnologías: HTML, CSS, JavaScript y Bootstrap.<br>
             </p>
           </div>
         </div>
@@ -295,9 +315,9 @@
       <p class="lead-user">@GlzLXochitl</p>
     </div>
     <div class="social-media-disposition-footer">
-      <a class="icon" href="#"><i class="fab fa-facebook-f"></i><img class="contact-log-disposition" src="/images/github.png"></a>
-      <a class="icon" href="#"><i class="fab fa-twitter"></i><img class="contact-log-disposition" src="/images/gmail.png"></a>
-      <a class="icon" href="#"><i class="fab fa-instagram"></i><img class="contact-log-disposition" src="/images/phone.png"></a>
+      <a class="icon" href="#"><img class="contact-log-disposition" src="/images/github.png"></a>
+      <a class="icon" href="#"><img class="contact-log-disposition" src="/images/gmail.png"></a>
+      <a class="icon" href="#"><img class="contact-log-disposition" src="/images/phone.png"></a>
     </div>
     <div class="lead-container">
       <p class="lead-year">© 2021 GlzLXochitl</p>

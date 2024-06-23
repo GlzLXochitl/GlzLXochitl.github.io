@@ -30,3 +30,27 @@ window.addEventListener('scroll', function() {
     }
 });
 
+/* ANIMACION DE LOGOS */
+function copyToClipboardAndShowAlert(textToCopy) {
+    // Copiar el texto al portapapeles
+    navigator.clipboard.writeText(textToCopy).then(function() {
+      // Mostrar la alerta después de copiar el texto
+      showAlert();
+    }).catch(function(error) {
+      console.error('Error al copiar al portapapeles: ', error);
+    });
+  }
+  
+  function showAlert() {
+    var alertDiv = document.getElementById('alertMessage');
+    alertDiv.classList.add('show'); // Hacer visible el div
+    alertDiv.style.display = 'block'; // Asegurarse de que el div sea un bloque
+    
+    setTimeout(function() {
+      alertDiv.classList.remove('show'); // Remover la clase después de 3 segundos
+      setTimeout(function() { // Esperar a que termine la transición de opacidad para ocultar el div
+        alertDiv.style.display = 'none';
+      }, 500); // Coincide con la duración de la transición
+    }, 3000);
+  }
+  

@@ -486,3 +486,23 @@ nav.scrolled {
     color: #c5c6c7;
 }
 
+.alert {
+    background-color: #82E0AA  !important; 
+    color: #196F3D !important;
+    font-weight: 500;
+    border-color: #196F3D !important;
+    transition: opacity 0.5s ease-in-out;
+    
+    opacity: 0; /* Inicia invisible */
+    position: fixed;
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+    z-index: 1000;
+    display: flex;
+
+}
+
+.alert.show {
+    opacity: 1; /* Se hace completamente visible */
+}
