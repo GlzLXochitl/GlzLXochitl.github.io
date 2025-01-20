@@ -53,4 +53,5 @@ function copyToClipboardAndShowAlert(textToCopy) {
       }, 500); // Coincide con la duración de la transición
     }, 3000);
   }
-  
+
+document.getElementById('lastUpdated').innerText = new Date().toLocaleDateString();
