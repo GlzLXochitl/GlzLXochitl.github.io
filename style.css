@@ -5,7 +5,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2); /* Borde semi-transparente */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    margin-top: 300px;
+    margin-top: 50px; /* Reduce the top margin for better positioning */
 }
 
 #modal-header, #modal-body{
@@ -448,7 +448,7 @@ nav.scrolled {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    gap: 20px; /* Add even spacing between images */
 }
 
 .icon {
@@ -541,8 +541,8 @@ nav.scrolled {
 
 .fixed-username {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px; /* Adjust bottom position */
+    right: 20px; /* Adjust right position */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px 10px;
@@ -550,4 +550,122 @@ nav.scrolled {
     z-index: 10000;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #0e0e10;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip styles for fixed username */
+.fixed-username-tooltip {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px; /* Add margin to detach from the right edge */
+}
+
+.fixed-username-tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #0e0e10;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 150%; /* Adjust position above the text */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.fixed-username-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #18181a; /* Background color of the scrollbar track */
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb when hovered */
+}
+
+.institutions-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Increase gap for better spacing */
+    padding: 2rem 5rem; /* Adjust padding for consistent spacing */
+
+}
+
+.institution-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.institution-text-container {
+    flex: 2;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    width: 100%; /* Ensure the text containers have the same size */
+    height: auto; /* Adjust height according to content */
+}
+
+.institution-image {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Adjust as needed */
+}
+
+.universidad {
+    font-size: 1.5em; /* Larger font size */
+    font-style: italic; /* Italic text */
+    font-weight: 600; /* Semi-bold */
+    font-family: "Roboto Condensed", sans-serif; /* Font family of the header */
+}
+
+.educacion {
+    font-size: 0.9em; /* Smaller font size */
+    color: grey; /* Grey color */
+    font-weight: normal; /* Remove bold */
 }
